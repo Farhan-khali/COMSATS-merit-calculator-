@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merit Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contanier">
+       <div class="center"> <h1><span> COMSAT</span> MERIT CALCULATOR</h1>
+     <p1 class="1">Your percentage is</p1><br>
+     <input type="text" class="input6" id="six"><br>
+        <p1 class="1">Enter your SSC obtained number</p1><br>
+         <input type="number" class="input1" id="first" ><br>
+         <p1 class="2">Enter your total number of SSC</p1><br>
+         <input type="number" class="input2" id="second" ><br>
+         <p1 class="3">Enter your HSC obtained number</p1><br>
+         <input type="text" class="input3" id="third" ><br>
+         <p1 class="4">Enter your total number of HSC</p1><br>
+         <input type="text" class="input4" id="four" ><br>
+         <p1 class="5">Enter your NTS test obtained number</p1><br>
+         <input type="text" class="input5" id="fith" ><br>
+         <button onclick="cle()">clear</button>
+         <button onclick="cal()">Submite</button>
+         
+        </div></div>
+        
+</body>
+
+<script>
+ function cle(){
+    string="";
+    document.getElementById('first') . value=string;
+    document.getElementById('second') .value=string;
+    document.getElementById('third') .value=string;
+    document.getElementById('four') .value=string;
+    document.getElementById('fith') .value=string;
+    document.getElementById('six') .value=string;
+ }
+    function cal(){
+        var a = document.getElementById('first') . value;
+        var b = document.getElementById('second') .value;
+    var c = a*100/b;
+    // alert(c);
+        var e = document.getElementById('third').value;
+        var f =  document.getElementById('four').value;
+        var g =  document.getElementById('fith').value;
+        var h = e*100/f;
+        // alert(h);
+        var i = h*40/100;
+        // alert(i);
+        var j = c*10/100;
+        var k = g*50/100;
+        var final = i+j+k;
+        // alert(final);
+        document.getElementById('six').value=final;
+    }
+  
+</script>
+</html>
